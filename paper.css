@@ -1,0 +1,5 @@
+body      { color: rgb(  0   0   0); background-color: rgb(255 255 255); }
+a:link    { color: rgb(255  20  20); }
+a:visited { color: rgb(255  20 255); }
+.en, .enx { color: rgb( 63  63   0); }
+.ja, .jax { color: rgb(  0  63  63); }

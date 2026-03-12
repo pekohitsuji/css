@@ -1,0 +1,10 @@
+.canvas { color: black; background-color: goldenrod; }
+
+body, textarea, input, label { color: black; background-color: goldenrod; }
+button, label.file           { color: black; background-color: gold; }
+
+label.file { border-top-color: rgb(95 95 95);
+             border-left-color: rgb(95 95 95);
+             border-right-color: rgb(0 0 0);
+             border-bottom-color: rgb(0 0 0);
+             color: black; }

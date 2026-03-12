@@ -1,0 +1,13 @@
+.canvas { color: rgb(0 127 239); background-color: rgb(223 159 223); }
+
+body, label, input, textarea {
+    color: rgb(0 63 239);
+    background-color: rgb(255 159 223); }
+
+button, label.file {
+    color: rgb(0 63 239); background-color: rgb(223 159 223); }
+
+label.file { border-top-color: rgb(95 95 95);
+             border-left-color: rgb(95 95 95);
+             border-right-color: rgb(0 0 0);
+             border-bottom-color: rgb(0 0 0); }

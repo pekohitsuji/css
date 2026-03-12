@@ -1,0 +1,100 @@
+body      { color: rgb(255 255 255); background-color: rgb(  0   0   0); }
+a:link    { color: rgb(255  20  20); }
+a:visited { color: rgb(255  20 255); }
+.en, .enx { color: rgb(255 255 127); }
+.ja, .jax { color: rgb(127 255 255); }
+
+body { margin: 4px; font-size: inherit; line-height: 1.8; }
+
+table { border-spacing: 0px; line-height: 1.1; }
+
+a { margin: 2px; padding: 1px 5px;
+    white-space: nowrap; text-decoration-line: none; }
+
+textarea { margin: 0px; padding: 2px; }
+input    { margin: 0px; margin-bottom: 2px; }
+button, label { margin: 0px 0px 4px 0px; padding: 1px 6px 1px 6px; }
+
+textarea, input { font-family: monospace;
+                  font-size: medium;
+                  line-height: 1.4; }
+
+a, button, textarea, input { border-radius: 5px;
+                             -webkit-border-radius: 5px;
+                             -moz-border-radius: 5px; }
+
+/* 簡便のためのクラス */
+.center { text-align: center; }
+.right  { text-align: right; }
+.left   { text-align: left; }
+.middle { vertical-align: middle; }
+.top    { vertical-align: top; }
+.bottom { vertical-align: bottom; }
+.hide   { display: none; }
+.table  { display: table; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.nowrap { white-space: nowrap; }
+.pre    { white-space: pre; }
+
+/* a の中に h1 h2 ... を入れるな */
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px 8px 0px 8px;
+    margin:  2px 8px 2px 2px;
+    white-space: nowrap; }
+
+h1 > a { padding: 0px; margin:  0px; }
+h2 > a { padding: 0px; margin:  0px; }
+h3 > a { padding: 0px; margin:  0px; }
+h4 > a { padding: 0px; margin:  0px; }
+h5 > a { padding: 0px; margin:  0px; }
+h6 > a { padding: 0px; margin:  0px; }
+
+.hist   { width: 350px; }
+
+.dangle { display: none;
+          margin: 3px;
+          margin-left: 20px;
+          padding: 5px; }
+
+.look-around { display: inline; }
+
+.top-right-menu { position: fixed;
+                  top: 20px;
+                  right: 20px;
+                  padding: 10px;
+                  border-radius: 5px;
+                  -webkit-border-radius: 5px;
+                  -moz-border-radius: 5px; }
+
+td { vertical-align: top; }
+
+td.representive { width: 60%; }
+td.candidate    { width: 40%; }
+
+.keybind td { border-collapse: collapse;
+              border: 1px solid;
+              padding: 5px;
+              line-height: 1.2;
+              font-size: small;
+              font-family: monospace; }
+
+iframe { border-style: solid; }
+
+code       { font-size: madium; }
+
+pre > code { font-size: medium;
+             display: table;
+             padding: 3px;
+             margin: 2px;
+             line-height: 1.4; }
+
+dd { margin-inline-start: 20px; }
+
+dd > dl { margin-top: 2px; margin-bottom: 2px; }
+
+table.md td, table.md th { padding: 5px;
+                           border-width: medium;
+                           border-style: solid; }
+
+form { margin-bottom: 3px; }
