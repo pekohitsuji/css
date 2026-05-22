@@ -1,13 +1,20 @@
-GIT_CHECK  = git config remote.origin.url
-GIT_REMOTE = git remote add origin https://github.com/pekohitsuji/css.git
+SHELL = /bin/bash
+RM = rm -f
+
+GIT_URL = https://github.com/pekohitsuji/$(shell basename $$(pwd)).git
+GIT_CHK = git config remote.origin.url
+GIT_ADD = git remote add origin $(GIT_URL)
 
 all:
+
+clean:
+	find -name "*~" -delete
 
 git:
 	if [ ! -d .git ] ; then git init ; fi
 	git config --local user.name  pekohitsuji
 	git config --local user.email kaeru921@icloud.com
-	if [ -z "$$($(GIT_CHECK))" ] ; then $(GIT_REMOTE) ; fi
+	if [ -z "$$($(GIT_CHK))" ] ; then $(GIT_ADD) ; fi
 	@echo "Do folloings:"
 	@echo "    git add ."
 	@echo "    git commit -m \"first commit\""
