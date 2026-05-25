@@ -1,0 +1,51 @@
+@import url("base.css");
+
+.en, .enx { color: rgb(255 255 127); }
+.ja, .jax { color: rgb(127 255 255); }
+
+/* 簡便のためのクラス */
+.center { text-align: center; }
+.right  { text-align: right; }
+.left   { text-align: left; }
+.middle { vertical-align: middle; }
+.top    { vertical-align: top; }
+.bottom { vertical-align: bottom; }
+.hide   { display: none; }
+.table  { display: table; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.nowrap { white-space: nowrap; }
+.pre    { white-space: pre; }
+
+.hist   { width: 350px; }
+
+.dangle { display: none;
+          margin: 3px;
+          margin-left: 20px;
+          padding: 5px; }
+
+.look-around { display: inline; }
+
+.top-right-menu { position: fixed;
+                  top: 20px;
+                  right: 20px;
+                  padding: 10px;
+                  border-radius: 5px;
+                  -webkit-border-radius: 5px;
+                  -moz-border-radius: 5px; }
+
+td { vertical-align: top; }
+
+td.representive { width: 60%; }
+td.candidate    { width: 40%; }
+
+.keybind td { border-collapse: collapse;
+              border: 1px solid;
+              padding: 5px;
+              line-height: 1.2;
+              font-size: small;
+              font-family: monospace; }
+
+table.md td, table.md th { padding: 5px;
+                           border-width: medium;
+                           border-style: solid; }

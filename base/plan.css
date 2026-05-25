@@ -1,0 +1,5 @@
+@import url("song.css");
+
+table              { width:  80%; table-layout: fixed; }
+tr > :nth-child(4) { width:  40%; }
+tr > :nth-child(5) { width:  20%; }
