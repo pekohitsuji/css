@@ -1,0 +1,73 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
+/*  Refactored Snow White Gothic
+
+    リファクタリングされたスノー・ホワイト・ゴシック
+
+- **方針**: 配色やデザインは「女の子が可愛いと思う」こと
+- **追加**: なし
+- **2026-06-09 19:15:00**: なし
+*/
+
+body {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: #f8fafc; /* 清冽なスノーホワイト */
+  background-image: 
+    linear-gradient(45deg, #e2e8f0 25%, transparent 25%, transparent 75%, #e2e8f0 75%, #e2e8f0),
+    linear-gradient(45deg, #e2e8f0 25%, transparent 25%, transparent 75%, #e2e8f0 75%, #e2e8f0);
+  background-origin: padding-box;
+  background-position-x: 0, 20px;
+  background-position-y: 0, 20px;
+  background-repeat: repeat;
+  background-size: 40px 40px;
+}
+
+body::before {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  /* アイスブルー의 極細十字グリッド */
+  background-image: 
+    linear-gradient(rgba(186, 230, 253, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(186, 230, 253, 0.5) 1px, transparent 1px);
+  background-origin: padding-box;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: repeat;
+  background-size: 20px 20px;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+body::after {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  /* 凍てついた空気感（ヴィネット効果） */
+  background-image: radial-gradient(circle at center, transparent, rgba(203, 213, 225, 0.2) 80%);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

@@ -1,0 +1,79 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
+/*  Refactored Pastel Prism Sky
+
+    リファクタリングされたパステル・プリズム・スカイ
+
+- **方針**: 配色やデザインは「女の子が可愛いと思う」こと
+- **追加**: なし
+- **2026-06-09 18:50:00**: なし
+*/
+
+body {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: #e0f2fe; /* 澄んだスカイブルー */
+  background-image: 
+    repeating-linear-gradient(90deg, 
+      rgba(255, 182, 193, 0.3) 0, rgba(255, 182, 193, 0.3) 10%, 
+      rgba(255, 218, 185, 0.3) 10%, rgba(255, 218, 185, 0.3) 20%, 
+      rgba(255, 250, 205, 0.3) 20%, rgba(255, 250, 205, 0.3) 30%, 
+      rgba(144, 238, 144, 0.3) 30%, rgba(144, 238, 144, 0.3) 40%, 
+      rgba(173, 216, 230, 0.3) 40%, rgba(173, 216, 230, 0.3) 50%, 
+      rgba(176, 196, 222, 0.3) 50%, rgba(176, 196, 222, 0.3) 60%, 
+      rgba(221, 160, 221, 0.3) 60%, rgba(221, 160, 221, 0.3) 70%
+    );
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: 200% 100%;
+}
+
+body::before {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  /* 虹のアーチをイメージした幾何学的な円模様 */
+  background-image: radial-gradient(circle at 50% 120%, transparent 40%, rgba(255, 255, 255, 0.2) 41%, rgba(255, 255, 255, 0.2) 45%, transparent 46%);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+body::after {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  /* キラキラした光をイメージした白いドット */
+  background-image: radial-gradient(#ffffff 1px, transparent 1px);
+  background-origin: padding-box;
+  background-position-x: 15px;
+  background-position-y: 15px;
+  background-repeat: repeat;
+  background-size: 30px 30px;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

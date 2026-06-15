@@ -1,0 +1,14 @@
+/* Stylish Dark Theme for Session AI */
+
+body {
+    color: #f0f0f0;
+    /* Scintillating Grid Illusion Pattern */
+    background-color: #05080f;
+    background-image: 
+        radial-gradient(#2d3748 1px, transparent 1px), 
+        linear-gradient(to right, #111827 1px, transparent 1px),
+        linear-gradient(to bottom, #111827 1px, transparent 1px);
+    background-size: 20px 20px, 20px 20px, 20px 20px;
+    background-position: 0 0, 10px 10px, 10px 10px;
+    background-attachment: fixed;
+}

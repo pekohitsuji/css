@@ -1,0 +1,74 @@
+/*
+ * "Sherbet Mint & Lavender" Theme
+ * 
+ * 「透明感のあるナチュラルな可愛さ」をテーマに。
+ * シャーベットのようなミントグリーンとラベンダーを組み合わせ、
+ * 清潔感と儚げな可愛さを両立させた配色です。
+ */
+
+.control, .turn {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.control {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.turn {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.prompt, .response {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left-width: 6px;
+}
+
+.prompt {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #e6fffa; /* 清潔感のあるミントグリーン */
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-left-style: solid;
+    border-left-color: #b2f5ea; /* 同系色の柔らかいアクセント */
+}
+
+.response {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #faf5ff; /* 儚げなラベンダー */
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-left-style: solid;
+    border-left-color: #e9d5ff; /* 同系色の柔らかいアクセント */
+}

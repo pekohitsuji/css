@@ -1,0 +1,21 @@
+/* Bulging Checkerboard - Tilted elements create the illusion of curved/bulging lines */
+
+body {
+    background-color: #0f172a;
+    background-image: 
+        linear-gradient(45deg, #1e293b 25%, transparent 25%, transparent 75%, #1e293b 75%, #1e293b),
+        linear-gradient(-45deg, #1e293b 25%, transparent 25%, transparent 75%, #1e293b 75%, #1e293b);
+    background-size: 60px 60px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Overlaying a grid with slight offsets to create the "bulge" illusion effect */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(circle, #334155 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+}

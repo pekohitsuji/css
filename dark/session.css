@@ -1,0 +1,25 @@
+.control, .turn {
+    color: #f0f0f0;
+}
+
+.control {
+    background-color: transparent;
+}
+
+.turn {
+    background-color: transparent;
+}
+
+.prompt, .response {
+    border-radius: 8px;
+}
+
+.prompt {
+    background-color: #1e293b;
+    border-left: 4px solid #38bdf8;
+}
+
+.response {
+    background-color: #2d3748;
+    border-left: 4px solid #10b981;
+}

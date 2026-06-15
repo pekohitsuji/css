@@ -1,0 +1,9 @@
+/* Stylish Dark Theme for Session AI */
+
+body {
+    color: #f0f0f0;
+    /* Darkened repeating gradient pattern */
+    background: repeating-linear-gradient(135deg, #05080f, #111827 75px, #2d3748 150px);
+    background-attachment: fixed;
+}
+

@@ -1,0 +1,18 @@
+/* Concentric Depth - Creating a sense of a tunnel or rotating spiral */
+
+body {
+    background-color: #020617;
+    background: 
+        repeating-radial-gradient(circle at 50% 50%, #0f172a, #0f172a 10px, #1e293b 10px, #1e293b 20px);
+    background-attachment: fixed;
+}
+
+/* Adding a skewed overlay to break the symmetry and create a "spinning" feel when scrolling */
+body::before {
+    content: "";
+    position: fixed;
+    top: -50%; left: -50%; width: 200%; height: 200%;
+    background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.03) 40px, rgba(255,255,255,0.03) 80px);
+    pointer-events: none;
+    transform: rotate(15deg);
+}

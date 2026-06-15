@@ -1,0 +1,75 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
+/*  Refactored Midnight Velvet Argyle
+
+    リファクタリングされたミッドナイト・ベルベット・アーガイル
+
+- **方針**: 配色やデザインは「女の子が可愛いと思う」こと
+- **追加**: なし
+- **2026-06-09 18:45:00**: なし
+*/
+
+body {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: #000000; /* 漆黒 */
+  background-image: 
+    linear-gradient(135deg, #1a0033 25%, transparent 25%), 
+    linear-gradient(225deg, #1a0033 25%, transparent 25%), 
+    linear-gradient(45deg, #1a0033 25%, transparent 25%), 
+    linear-gradient(315deg, #1a0033 25%, transparent 25%);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: 60px 100px;
+}
+
+body::before {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  /* 深紅の格子ライン */
+  background-image: 
+    linear-gradient(to right, rgba(128, 0, 0, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 0, 0, 0.4) 1px, transparent 1px);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: 30px 50px;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+body::after {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  /* ベルベットのような質感を出すための、中心が明るい紫のグラデーション */
+  background-image: radial-gradient(circle at center, rgba(30, 0, 60, 0.3), #000);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

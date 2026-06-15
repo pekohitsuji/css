@@ -1,0 +1,21 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
+/* Op-Art Vibration - Pattern that seems to shimmer or move */
+
+body {
+  color: #f0f0f0;
+  /* High-frequency Zigzag (Vibration Effect) */
+  background-color: #0f172a;
+  background-image: 
+    linear-gradient(135deg, #1e293b 25%, transparent 25%), 
+    linear-gradient(225deg, #1e293b 25%, transparent 25%), 
+    linear-gradient(45deg, #1e293b 25%, transparent 25%), 
+    linear-gradient(315deg, #1e293b 25%, transparent 25%);
+  background-size: 10px 10px;
+  background-attachment: fixed;
+}
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

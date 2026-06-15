@@ -1,0 +1,52 @@
+:root { color-scheme: light dark; }
+body {
+    margin: 0;
+    padding: 4rem;
+    min-height: 90vh;
+    color: light-dark(#000000, #ffffff);
+    background-color: light-dark(#dfdfdf, #000018);
+}
+
+pre {
+    padding: 1rem;
+    border-radius: 1rem;
+    color: light-dark(#000000, #ffffff);
+    background-color: light-dark(#dfbfdf, #180028);
+}
+
+button, input, select, textarea {
+    color: light-dark(#000000, #ffffff);
+    background-color: light-dark(#dfbfdf, #180028);
+}
+
+.hidden { display: none }
+
+.control, .turn {
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.control {
+    margin-bottom: 1rem;
+    text-align: right;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 4rem;
+}
+
+.turn {
+    margin-bottom: 2rem;
+}
+
+.prompt, .response {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.prompt {
+}
+
+.response {
+}

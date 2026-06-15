@@ -1,0 +1,79 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
+/*  Refactored Sweet Botanical Paisley
+
+    リファクタリングされたスウィート・ボタニカル・ペイズリー
+
+- **方針**: 配色やデザインは「女の子が可愛いと思う」こと
+- **追加**: なし
+- **2026-06-09 19:10:00**: なし
+*/
+
+body {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: #fffaf0; /* フレンチバニラ */
+  /* ペイズリーの「しずく型」を楕円の重なりで表現 */
+  background-image: 
+    radial-gradient(ellipse at 50% 50%, rgba(255, 182, 193, 0.4) 20%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(176, 226, 255, 0.3) 15%, transparent 40%),
+    radial-gradient(circle at 10% 10%, rgba(255, 255, 150, 0.2) 0%, transparent 30%);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+body::before {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  /* 勾玉の内部装飾をイメージした、密度の高い装飾パターン */
+  background-image: 
+    radial-gradient(circle at 15px 15px, #ffb6c1 4px, transparent 5px),
+    radial-gradient(circle at 45px 45px, #98fb98 3px, transparent 4px),
+    /* 曲線を描くような細かなパターンの重なり */
+    repeating-radial-gradient(circle at 0 0, transparent 0, transparent 20px, rgba(255, 182, 193, 0.1) 21px, rgba(255, 182, 193, 0.1) 22px);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: 60px 60px, 90px 90px, 100px 100px;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+body::after {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  /* ペイズリーの輪郭を補完する大きなうねり */
+  background-image: 
+    radial-gradient(ellipse 150% 100% at 50% 100%, transparent 80%, rgba(255, 218, 185, 0.2) 85%, transparent 90%),
+    radial-gradient(ellipse 150% 100% at 50% 0%, transparent 80%, rgba(176, 226, 255, 0.1) 85%, transparent 90%);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

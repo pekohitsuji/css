@@ -1,0 +1,77 @@
+/*
+ * "Soft & Sweet Dreamy" Theme
+ * 
+ * 「ゆめかわいい」をテーマに、パステルピンクやふんわりしたラベンダーを基調とします。
+ * 角を丸くし、繊細な境界線とふんわりした影を使うことで、マシュマロのような柔らかい可愛さを演出します。
+ */
+
+.control, .turn {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.control {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.turn {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.prompt, .response {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left-width: 6px;
+}
+
+.prompt {
+    color: #4a4a4a;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #fff0f3; /* 非常に淡いピンク */
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-left-style: solid;
+    border-left-color: #ff8fa3;
+    /* box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3); /* ほんのりピンクの影 */ */
+}
+
+.response {
+    color: #4a4a4a;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #f3e5f5; /* 淡いラベンダーパープル */
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-left-style: solid;
+    border-left-color: #ba68c8;
+    /* box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3); /* ほんのりピンクの影 */ */
+}

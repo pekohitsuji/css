@@ -1,0 +1,76 @@
+/*
+ * "Crimson Rose & Black Lace Fantasia" Theme (Gothic & Lolita)
+ * 
+ * 「深紅の薔薇と黒レースの幻想曲」
+ * 重厚な黒と深みのある赤（ボルドー）を基調にし、
+ * 耽美でクラシカルな、甘く毒のある世界観を表現します。
+ */
+
+.control, .turn {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.control {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.turn {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.prompt, .response {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left-width: 6px;
+}
+
+.prompt {
+    color: #ffffff;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #2d0a0a, #000000);
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-left-style: double;
+    border-left-color: #800000; /* 重厚なダブルライン */
+}
+
+.response {
+    color: #ffffff;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: repeating-linear-gradient(45deg, #0a0a0a, #0a0a0a 10px, #1a1a1a 11px); /* 微細な縞模様で質感を表現 */
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-left-style: double;
+    border-left-color: #4a4a4a;
+}
