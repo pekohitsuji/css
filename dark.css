@@ -1,3 +1,5 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
 body      { color: rgb(255 255 255); background-color: rgb(0, 0, 20, 0.8); }
 a:link    { color: rgb(223  95  31); background-color: rgb( 95  31  95);  }
 a:visited { color: rgb(  0   0 223); background-color: rgb(223  95 191);  }
@@ -58,3 +60,8 @@ a:link {
     -moz-border-radius: 5px 5px 5px 5px;
     color: rgb(223 95 31);            /* 赤 */
     background-color: rgb(95 31 95);  /* 暗い紫 */ }
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

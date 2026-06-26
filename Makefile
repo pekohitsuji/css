@@ -5,7 +5,7 @@ GIT_URL = https://github.com/pekohitsuji/$(shell basename $$(pwd)).git
 GIT_CHK = git config remote.origin.url
 GIT_ADD = git remote add origin $(GIT_URL)
 
-all:
+all: HTMLIZE.html
 
 clean:
 	find -name "*~" -delete
@@ -20,3 +20,6 @@ git:
 	@echo "    git commit -m \"first commit\""
 	@echo "    git branch -M main"
 	@echo "    git push -u origin main"
+
+HTMLIZE.html: ../ai/HTMLIZE-TEMPLATE.html
+	cp $< $@

@@ -1,3 +1,5 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
 @import url("../base.css");
 
 td {
@@ -13,3 +15,8 @@ tr > td:first-child {
     padding: 6px; vertical-align: top;
     text-align: center; text-wrap: nowrap;
 }
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

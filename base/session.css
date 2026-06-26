@@ -1,52 +1,123 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
 :root { color-scheme: light dark; }
 body {
-    margin: 0;
-    padding: 4rem;
-    min-height: 90vh;
-    color: light-dark(#000000, #ffffff);
-    background-color: light-dark(#dfdfdf, #000018);
+  margin: 0;
+  padding: 4rem;
+  min-height: 90vh;
+  color:            light-dark(#000000, #ffffff);
+  background-color: light-dark(#dfdfdf, #000018);
 }
 
+p { margin-bottom: 1rem; margin-top: 0; }
+
 pre {
-    padding: 1rem;
-    border-radius: 1rem;
-    color: light-dark(#000000, #ffffff);
-    background-color: light-dark(#dfbfdf, #180028);
+  padding-bottom: 0.5em;
+  padding-left:     1em;
+  padding-right:    1em;
+  padding-top:    0.5em;
+  border-radius:  0.5em;
+  margin-bottom:  0.5em;
+  margin-left:      0;
+  margin-right:     0;
+  margin-top:     0.5em;
+  border-radius:  0.5rem;
+  color:            light-dark(#000000, #ffffff);
+  background-color: light-dark(#df9fbf, #180028);
+}
+
+code:not(pre > code) {
+    background-color: light-dark(#dfbfdf, #280038);
 }
 
 button, input, select, textarea {
-    color: light-dark(#000000, #ffffff);
-    background-color: light-dark(#dfbfdf, #180028);
+  color:            light-dark(#000000, #ffffff);
+  background-color: light-dark(#df9fbf, #180028);
+}
+
+dl, ol, ul {
+  margin-bottom: 0.1em;
+  margin-top:    0.5em;
+}
+
+dl     { padding-left: 1em; }
+ol, ul { padding-left: 2em; }
+
+ol > pre { margin-left: -1rem; }
+ul > pre { margin-left: -1rem; }
+
+table {
+  border-bottom-width: 1px;
+  border-left-width:   1px;
+  border-right-width:  1px;
+  border-top-width:    1px;
+  border-bottom-color: light-dark(#000000, #ffffff);
+  border-left-color:   light-dark(#000000, #ffffff);
+  border-right-color:  light-dark(#000000, #ffffff);
+  border-top-color:    light-dark(#000000, #ffffff);
+  border-bottom-style: solid;
+  border-left-style:   solid;
+  border-right-style:  solid;
+  border-top-style:    solid;
 }
 
 .hidden { display: none }
+.right  { text-align: right; }
 
-.control, .turn {
-    padding: 1rem;
-    background-color: transparent;
+.control, .instruction, .turn {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: transparent;
 }
 
 .control {
-    margin-bottom: 1rem;
-    text-align: right;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 4rem;
+  margin-bottom: 1rem;
+  text-align: right;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 4rem;
+}
+
+.instruction {
+  padding-bottom: 0.1rem;
+  padding-left:     1rem;
+  padding-right:    1rem;
+  padding-top:      1rem;
+  border-radius: 1rem;
+  color: light-dark(#000000, #ffffff);
+  background-color: light-dark(#dfbfbf, #180000);
 }
 
 .turn {
-    margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  /* background-color: light-dark(#bfbfbf, #00df00); */
 }
 
 .prompt, .response {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    line-height: 1.6;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top:      1rem;
+  line-height: 1.6;
 }
 
 .prompt {
+  text-align: right;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: light-dark(#000000, #ffffff);
+  background-color: light-dark(#bfbfdf, #281800);
 }
 
 .response {
+  padding: 1rem;
+  border-radius: 1rem;
+  color: light-dark(#000000, #ffffff);
+  background-color: light-dark(#9fdf9f, #001800);
 }
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

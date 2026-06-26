@@ -1,3 +1,5 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
 :root { color-scheme: light dark; }
 body {
     margin: 0;
@@ -20,3 +22,8 @@ button, input, select, textarea {
 }
 
 .hidden { display: none }
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

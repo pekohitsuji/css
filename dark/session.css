@@ -1,3 +1,5 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
 .control, .turn {
     color: #f0f0f0;
 }
@@ -23,3 +25,8 @@
     background-color: #2d3748;
     border-left: 4px solid #10b981;
 }
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

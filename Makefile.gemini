@@ -1,0 +1,24 @@
+### 目的は、gemini CLI を make から起動したときの挙動を確認すること
+###
+### 2026-06-07 with-p
+###   (1) 私は**非対話モード**（Non-interactive mode）で動作しています。
+###       システムプロンプトに「headless/CI環境で実行されており、
+###       ユーザーと対話することはできない」と明記されています。
+###   (2) ヘッドレス環境であるため、標準的な **TTY は検出されていない**
+###       （または有効ではない）状態です。
+###
+### 2026-06-07 without-p
+###   (1) 現在、私は対話モードで動作しています。
+###   (2) TTY は検出されています（stdin および stdout の両方で TTY が
+###       有効であることを確認しました）。
+
+PROMPT="(1) 対話モードか非対話モードか答えて (2) TTY を検出できてるか答えて"
+
+all: with-p without-p
+	echo complete Makefile.gemini
+
+with-p :
+	gemini -p $(PROMPT)
+
+without-p :
+	gemini $(PROMPT)

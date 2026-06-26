@@ -1,0 +1,69 @@
+#!/bin/bash
+# -*- coding: utf-8-unix; mode: shell-script; sh-basic-offset: 2; -*-
+
+### # 概要
+###
+### ナンバリングしたファイル名を生成する
+###
+### # 使用法
+###
+### NUMBERING [-b ベース名 | -n ナンバリング桁数 | -e 拡張子] [ファイル名]
+###
+### # 注意
+###
+### 空白を含むワイルドカードに対応するため eval を使用.
+### -b, -n, -e オプションの引数によるインジェクションに注意せよ.
+###
+
+SCRIPT_PATH_NAME="$0"
+SCRIPT_BASE_NAME=$(basename "$0")
+
+usage () {
+  echo "${SCRIPT_BASE_NAME}: " \
+       "[-b ベース名 | -n ナンバリング桁数 | -e 拡張子] [ファイル名]"
+  exit 1
+}
+
+base="TEST-"
+keta=2
+ext=css
+
+while getopts "b:n:e:" opt; do
+  case "$opt" in
+    b) base="$OPTARG"
+       ;;
+    n) keta="$OPTARG"
+       ;;
+    e) ext="$OPTARG"
+       ;;
+    ?) usage
+       ;;
+  esac
+done
+shift $((OPTIND - 1))
+
+if [ $# -gt 0 ] ; then
+  echo "$1"
+  exit 0
+fi
+
+form="%0${keta}d"
+wild="${base}$(printf '[0-9]%.0s' $(seq 1 $keta)).${ext}"
+escaped="${wild// /\\ }"
+eval "ls $escaped"  &> /dev/null  # ワイルドカードを試す
+if [ $? -ne 0 ] ; then
+  # エラー有り -> 対応するファイルがない
+  echo "${base}$(printf ${form} 1).${ext}"
+else
+  # エラーなし -> 対応するファイルが有る
+  lastfile=$(eval "ls $escaped" | tail -1)
+  if [[ "$lastfile" =~ ^${base}([0-9]{${keta}})\.${ext}$ ]] ; then
+    num=${BASH_REMATCH[1]}
+    nxt=$(expr $num + 1)
+    if [ ${#nxt} -gt $keta ] ; then
+      echo "NUMBERING: overflow"
+      exit 1
+    fi
+    echo "${base}$(printf ${form} ${nxt}).${ext}"
+  fi
+fi

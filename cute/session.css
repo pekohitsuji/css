@@ -1,21 +1,27 @@
-/*
- * "Dreamy Pastel Rainbow" Theme
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
+/* Dreamy Pastel Rainbow Theme
  * 
- * 「空に溶け出すパステル・レインボー」
+ * 空に溶け出すパステル・レインボー
+ *
  * 夢の中の虹やオーロラをイメージし、淡い色がふんわりと溶け合う幻想的なグラデーションを採用。
  * 魔法のようなロマンチックな可愛さを表現します。
+ *
+ * - 方針: 配色やデザインは「女の子が可愛いと思う」こと
+ * - 追加: 繰り返す虹のグラデーション
  */
 
+
 pre {
-    color: #000000;
-    background-color: #dfbfdf;
+  color: #000000;
+  background-color: #dfbfdf;
 }
 
 .control, .turn {
-    border-bottom-left-radius:   8px;
-    border-bottom-right-radius:  8px;
-    border-top-left-radius:      8px;
-    border-top-right-radius:     8px;
+  border-bottom-left-radius:   8px;
+  border-bottom-right-radius:  8px;
+  border-top-left-radius:      8px;
+  border-top-right-radius:     8px;
 }
 
 .control {
@@ -25,36 +31,41 @@ pre {
 }
 
 .prompt, .response {
-    border-bottom-left-radius:  15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius:     15px;
-    border-top-right-radius:    15px;
-    border-left-width: 6px;
+  border-bottom-left-radius:  15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius:     15px;
+  border-top-right-radius:    15px;
+  border-left-width: 6px;
 }
 
 .prompt {
-    color: #4a4a4a;
-    background-attachment: scroll;
-    background-clip: padding-box;
-    background-color: transparent;
-    background-image: repeating-linear-gradient(135deg, #ffccd5 0px, #fff9c4 100px, #c8e6c9 200px, #fff9c4 300px, #ffccd5 400px);
-    background-origin: padding-box;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    border-left-style: solid;
-    border-left-color: #ff8fa3;
+  color: #4a4a4a;
+  background-attachment: scroll;
+  background-clip: padding-box;
+  background-color: transparent;
+  background-image: repeating-linear-gradient(135deg, #ffccd5 0px, #fff9c4 100px, #c8e6c9 200px, #fff9c4 300px, #ffccd5 400px);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  border-left-style: solid;
+  border-left-color: #ff8fa3;
 }
 
 .response {
-    color: #4a4a4a;
-    background-clip: padding-box;
-    background-color: transparent;
-    background-image: repeating-linear-gradient(135deg, #bbdefb 0px, #e1bee7 100px, #ffccd5 200px, #e1bee7 300px, #bbdefb 400px);
-    background-origin: padding-box;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    border-left-style: solid;
-    border-left-color: #a5caff;
+  color: #4a4a4a;
+  background-clip: padding-box;
+  background-color: transparent;
+  background-image: repeating-linear-gradient(135deg, #bbdefb 0px, #e1bee7 100px, #ffccd5 200px, #e1bee7 300px, #bbdefb 400px);
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  border-left-style: solid;
+  border-left-color: #a5caff;
 }
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

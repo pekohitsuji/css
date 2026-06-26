@@ -1,3 +1,5 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
 @import url("base.css");
 
 .en, .enx { color: rgb(255 255 127); }
@@ -49,3 +51,8 @@ td.candidate    { width: 40%; }
 table.md td, table.md th { padding: 5px;
                            border-width: medium;
                            border-style: solid; }
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

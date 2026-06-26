@@ -1,5 +1,12 @@
+/* -*- coding: utf-8-unix; mode: css-ts; -*- */
+
 @import url("song.css");
 
 table              { width:  80%; table-layout: fixed; }
 tr > :nth-child(4) { width:  40%; }
 tr > :nth-child(5) { width:  20%; }
+
+/* Local Variables: */
+/* indent-tabs-mode: nil */
+/* css-indent-offset: 2 */
+/* End: */

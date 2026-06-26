@@ -1,4 +1,4 @@
-<!-- coding: utf-8-unix; mode: markdown -->
+<!-- -*- coding: utf-8-unix; mode: markdown; -*- -->
 
 この文書ファイルと同じフォルダ内に、
 この文書ファイルの拡張子を css にした css ファイルを作成せよ.
@@ -13,3 +13,7 @@
 - body の背景は以下のようなグラデーションにせよ
   - 画面の右下に向かって変化し
   - 150px の周期で繰り返す
+
+<!-- Local Variables: -->
+<!-- indent-tabs-mode: nil -->
+<!-- End: -->

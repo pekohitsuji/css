@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTMLIZE</title>
+    <base target="_blank">
+    <script src="../js/turn_next.js"></script>
+    <script src="../js/onload/trim-pre-code.js"></script>
+    <link id="style" rel="stylesheet" href="../css/base/session.css" />
+  </head>
+  <body>
+    <div class="control">
+    </div>
+    <div class="instruction">
+      <table>
+        <thead><tr><td>形式</td><td>作業内容</td></tr></thead>
+        <tbody>
+          <tr>
+            <td><code>(HTMLIZE ID 追加の指定 ...)</code></td>
+            <td>
+              本ファイルの
+              <code>[class~="instruction"][id="{ID}"]:first-of-type</code>
+              要素内のテキスト
+            </td>
+          </tr>
+          <tr>
+            <td><code>(HTMLIZE ID)</code></td>
+            <td>
+              本ファイルの
+              <code>[class~="instruction"][id="{ID}"]:first-of-type</code>
+              要素内のテキスト
+            </td>
+          </tr>
+          <tr>
+            <td><code>(HTMLIZE)</code></td>
+            <td>
+              本ファイルの
+              <code>[class~="instruction"]:nth-of-type(2)</code>
+              要素内のテキスト
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="instruction">
+      以下を行え
+      <button onclick="turn_next(this);">+</button>
+      <span class="hidden">
+        用語の定義
+        <dl>
+          <dt>プロンプト要素</dt>
+          <dd>本ファイルの
+            <code>.turn:last-of-type > .prompt:last-of-type</code></dd>
+          <dt>プロンプト内容</dt>
+          <dd>プロンプト要素内のテキスト</dd>
+        </dl>
+        <ol>
+          <li>回答を表示せよ</li>
+          <li>
+            プロンプト要素の次の兄弟要素として、
+            以下のコードブロックの内容を本ファイルに書き込め</li>
+          <pre><code>
+      &lt;div class=&quot;right&quot;&gt;
+        &lt;span class=&quot;time&quot;&gt;
+          `{作成年月日YYYY-mm-DD_HH-MM-SS}`&lt;/span&gt;
+        &lt;span class=&quot;model&quot;&gt;
+          `{チャット用AIモデル名バージョン含む}`&lt;/span&gt;
+        &lt;button onclick=&quot;turn_next(this.parentElement);&quot;&gt;
+          +&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;response hidden&quot;&gt;
+`{回答} をHTML化したもの`
+      &lt;/div&gt;
+          </code></pre>
+        </ol>
+      </span>
+    </div>
+    <div class="instruction" id="new">
+      `{追加の指定 ...}` を `{プロンプト}` として以下を行え
+      <button onclick="turn_next(this);">+</button>
+      <span class="hidden">
+        <ol>
+          <li>回答を表示せよ</li>
+          <li>本ファイルの
+            <code>.turn:last-of-type</code> 要素の次の要素として
+            以下のコードブロックの内容を本ファイルに書き込め</li>
+          <pre><code>
+    &lt;div class=&quot;turn&quot;&gt;
+      &lt;div class=&quot;prompt&quot;&gt;
+`{プロンプト} をHTML化したもの`
+      &lt;/div&gt;
+      &lt;div class=&quot;right&quot;&gt;
+        &lt;span class=&quot;time&quot;&gt;
+          `{作成年月日YYYY-mm-DD_HH-MM-SS}`&lt;/span&gt;
+        &lt;span class=&quot;model&quot;&gt;
+          `{チャット用AIモデル名バージョン含む}`&lt;/span&gt;
+        &lt;button onclick=&quot;turn_next(this.parentElement);&quot;&gt;
+          +&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;response hidden&quot;&gt;
+`{回答} をHTML化したもの`
+      &lt;/div&gt;
+    &lt;/div&gt;
+          </code></pre>
+        </ol>
+      </span>
+    </div>
+    <div class="turn">
+      <div class="prompt">
+        Say "Hello, world!"
+      </div>
+    </div>
+  </body>
+</html>
