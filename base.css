@@ -1,61 +1,37 @@
 /* -*- coding: utf-8-unix; mode: css-ts; -*- */
 
-body      { color: rgb(255 255 255); background-color: rgb(  0   0   0); }
-a:link    { color: rgb(255  20  20); }
-a:visited { color: rgb(255  20 255); }
+:root { color-scheme: light dark; }
+body {
+    margin: 0;
+    padding: 4rem;
+    min-height: 90vh;
+    color: light-dark(#000000, #ffffff);
+    background-color: light-dark(#dfdfdf, #000018);
+}
 
-body { margin: 4px; font-size: inherit; line-height: 1.8; }
+pre {
+    padding: 1rem;
+    border-radius: 1rem;
+    color: light-dark(#000000, #ffffff);
+    background-color: light-dark(#dfbfdf, #180028);
+}
 
-table { border-spacing: 0px; line-height: 1.1; }
+button, input, select, textarea {
+    color: light-dark(#000000, #ffffff);
+    background-color: light-dark(#dfbfdf, #180028);
+}
 
-td { padding: 6px; }
+.hidden {
+  display: none;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
-a { margin: 2px; padding: 1px 5px;
-    line-height: 1.8;
-    white-space: nowrap; text-decoration-line: none; }
+.TL { padding: 5px; vertical-align: top; text-align: left; }
+.TR { padding: 5px; vertical-align: top; text-align: right; }
 
-textarea { margin: 0px; padding: 2px; }
-input    { margin: 0px; margin-bottom: 2px; }
-button, label { margin: 0px 0px 4px 0px; padding: 1px 6px 1px 6px; }
-
-textarea, input { font-family: monospace;
-                  font-size: medium;
-                  line-height: 1.4; }
-
-a, button, textarea, input { border-radius: 5px;
-                             -webkit-border-radius: 5px;
-                             -moz-border-radius: 5px; }
-
-/* a の中に h1 h2 ... を入れるな */
-h1, h2, h3, h4, h5, h6 {
-    padding: 0px 8px 0px 8px;
-    margin:  2px 8px 2px 2px;
-    white-space: nowrap; }
-
-h1 > a { padding: 0px; margin:  0px; }
-h2 > a { padding: 0px; margin:  0px; }
-h3 > a { padding: 0px; margin:  0px; }
-h4 > a { padding: 0px; margin:  0px; }
-h5 > a { padding: 0px; margin:  0px; }
-h6 > a { padding: 0px; margin:  0px; }
-
-iframe { border-style: solid; }
-
-code       { font-size: madium; }
-
-pre > code { font-size: medium;
-             display: table;
-             padding: 3px;
-             margin: 2px;
-             line-height: 1.4; }
-
-dd { margin-inline-start: 20px; }
-
-dd > dl { margin-top: 2px; margin-bottom: 2px; }
-
-form { margin-bottom: 3px; }
-
-/* Local Variables: */
-/* indent-tabs-mode: nil */
-/* css-indent-offset: 2 */
-/* End: */
+.BL { border-left-width:   2px; border-left-style:   solid; }
+.BR { border-right-width:  2px; border-right-style:  solid; }
+.BT { border-top-width:    2px; border-top-style:    solid; }
+.BB { border-bottom-width: 2px; border-bottom-style: solid; }

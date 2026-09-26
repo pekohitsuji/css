@@ -1,5 +1,5 @@
 #!/bin/bash
-# -*- coding: utf-8-unix; mode: shell-script; sh-basic-offset: 2; -*-
+# -*- coding: utf-8-unix; mode: shell-script; -*-
 
 ### # 概要
 ###
@@ -7,3 +7,8 @@
 cd $(dirname $0)
 
 ../bin/NUMBERING
+
+# -*- Local Variables: -*-
+# -*- indent-tabs-mode: nil -*-
+# -*- sh-basic-offset: 2 -*-
+# -*- End: -*-

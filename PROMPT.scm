@@ -25,7 +25,8 @@
 ;; (import (scheme mapping))
 ;; (import (scheme bytevector))
 
-(display "Hello, world!")
-(newline)
-(display "Good-bye, human!")
-(newline)
+(show #t "Hello, world!" nl)
+
+;;; Local Variables:
+;;; indent-tabs-mode: nil
+;;; End:
